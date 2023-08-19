@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<launch>
+
+      <node name="car_controller" pkg="my_lqr" type="car_controller" output="screen"  respawn="false">
+        <param name="q" value = "1" type = "double"/> 
+        <param name="r" value = "300" type = "double"/>     
+        <param name="straight_vel" value = "1.2" type = "double"/>
+        <param name="arc_vel" value = "1.0" type = "double"/>
+     </node>
+
+</launch>
